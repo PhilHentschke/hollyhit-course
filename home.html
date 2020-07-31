@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" href="face.css" type="text/css">
+	<title>App | Home </title>
+	<meta charset="utf-8">
+<head/>
+	
+<body>
+	
+	<header>
+	<a href="home.html"><img src="Bilder/Hentschke_Logo.jpg" alt="Logo" height= 35px; </a></header>
+		<div id="wrapper">
+		<nav>
+			<ul>
+				<li><a href="news.html"><button>News</button></a></li> 
+			
+				<li><a href="karte.html"><button>Projektkarte</button></a></li>
+		
+				<li><a href="einsatzplan"><button>Einsatzplan</button></a></li>
+			
+				<li><a href="azubi.html"><button>Azubis</button></a></li>
+			
+				<li><a href="download.html"><button>Downloads</button></a></li>
+			</ul>
+			</nav>
+		</div>
+	</header>
+	
+	</br>
+	</br>
+	</br>
+	
+	<div id="picsEins">
+			<li><a href="#"><img src="Bilder/gallerie_start/logog.png" alt="Logog"><class="gross"></a></li>
+			<li><a href="#"><img src="Bilder/gallerie_start/spaten.jpg" alt="Logo" height=280px> <class="gross"></a></li>
+	</div>
+  
+  <br>
+<marquee>+++Diese App ist Eigentum von Hentschke Bau+++</marquee>
+
+<?php
+$datei = "db_namen.csv";						// Dateinamen angeben
+
+$opencsv = fopen("$datei", "r");			// Datei öffnen
+
+$liste = split("(\r\n|\n|\r)",$opencsv);	// Inhalt per Zeilenumbruch trennen
+
+for($x=0;$x<count($liste);$x++) {			// FOR Schleife die durch die Zeilen springt
+
+	$daten = split(";",$liste[$x]);		// Inhalt der Zeile durch ";" trennen
+
+	echo $daten[0];	
+?>
+	
+<body/>
+
+<html/>
