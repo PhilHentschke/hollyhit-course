@@ -1,16 +1,11 @@
-title: HollyHit
-description: Just a Test-app and first time use
-template:
-  repo: hollyhit-template
-  name: hollyhit
-before:
-  - type: createIssue
-    title: Welcome!
-    body: new-issue.md
-steps:
-  - title: First step
-    description: The first step in your course
-    event: issues.assigned
-    link: '{{ repoUrl }}'
-    actions:
-      - type: closeIssue
+<widget id="HollyHit" version="0.0.1">
+        <name>HollyHit</name>
+        <description>
+            A sample Apache Cordova application that responds to the deviceready event.
+        </description>
+        <author email="dev@callback.apache.org" href="http://cordova.io">
+            Apache Cordova Team
+        </author>
+        <content src="index.html" />
+        <access origin="*" />
+    </widget>
